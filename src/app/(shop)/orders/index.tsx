@@ -44,6 +44,7 @@ const statusDisplayText: Record<OrderStatus, string> = {
 const Orders = () => {
     return (
         <View style={styles.container}>
+        <Stack.Screen options={{ title: 'Orders' }} />
             <FlatList 
             data={ORDERS}
             keyExtractor={item => item.id.toString()}
